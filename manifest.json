@@ -1,0 +1,30 @@
+{
+    "author": "Open Access Button",
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "browser_action": {
+        "default_title": "Open Access Button",
+        "default_icon": {
+            "20": "img/oa128.png"
+        }
+    },
+    "description": "Push Button. Get Research. Make Progress.",
+    "icons": {
+        "20": "img/oa128.png"
+    },
+    "manifest_version": 2,
+    "name": "Open Access Button",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "short_name": "OAbutton",
+    "version": "4.2.2",
+    "version_name": "oabutton_4.2.2",
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
+    }
+}
